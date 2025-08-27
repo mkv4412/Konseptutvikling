@@ -5,16 +5,37 @@
     </head>
     <body>
         <div class="background-image"></div>
-        <h1> Unreleased </h1>
-        <h2>Tracks</h2>
-        <ul>
-            <li>"Against The Wind"</li>
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/7fdMGb5mSv5cZyn5HpgQEd?utm_source=generator" width="65%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <li>"Yves Slatt Laurent"</li>
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/3z8AjFVw70qICpa61t30Jn?utm_source=generator" width="65%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </ul>
+        <div class="text-bg">
+            <h1>Unreleased</h1>
+            <h2>Tracks</h2>
+            <ul>
+                <li>"Against The Wind"</li>
+                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/7fdMGb5mSv5cZyn5HpgQEd?utm_source=generator" width="65%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <li>"Yves Slatt Laurent"</li>
+                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/3z8AjFVw70qICpa61t30Jn?utm_source=generator" width="65%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </ul>
+        </div>
     </body>
     <style>
+        body {
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+        }
+        .text-bg {
+            background: rgba(255,255,255,0.75);
+            border-radius: 20px;
+            padding: 32px 24px;
+            position: absolute;
+            top: 40px;
+            left: calc(75vw - 400px);
+            width: 950px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+        }
+        .text-bg h1, .text-bg h2, .text-bg ul, .text-bg li {
+            background: none;
+            border-radius: 0;
+            margin: 0 0 12px 0;
+            padding: 0;
+        }
         .background-image  {
             background-image: url("ViewsDrake.jpg");
             background-size : cover;
