@@ -6,6 +6,9 @@ body {
   align-items: center;
   margin: 0;
   text-align: center;
+  background-image: url("../Visuelt/InitBG.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .pop-border {
